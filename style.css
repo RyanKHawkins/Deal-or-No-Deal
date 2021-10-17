@@ -1,0 +1,14 @@
+
+:root {
+    --dark_yellow:  rgb(200, 200, 0);
+    --dark_bg:  rgb(75, 75, 75)
+}
+
+body {
+    background-color: var(--dark_bg)
+}
+header {
+    color:  var(--dark_yellow);
+    border:  1px solid var(--dark_yellow);
+    padding:  2.5px 5px;
+}
