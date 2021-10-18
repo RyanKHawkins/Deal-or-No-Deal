@@ -37,10 +37,7 @@ function playGame() {
     let briefcasesSelected = []
     console.log("Started game.")
     let offerAccepted = false;
-    while (round < 10 && offerAccepted = false) {
-        
-        round++
-    }
+
 }
 
 function chooseBriefcase(briefcase, round = 1) {
