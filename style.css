@@ -1,6 +1,6 @@
 
 :root {
-    --dark_yellow:  rgb(200, 200, 0);
+    --dark_yellow:  rgb(220, 220, 50);
     --dark_bg:  rgb(50, 50, 50);
     --med_gray: rgb(150, 150, 150);
     --light_gray:  rgb(175, 175, 175)
@@ -13,11 +13,22 @@ header {
     width:  60%;
     margin: 5px auto;
     text-align: center;
-    text-shadow: .5px .5px 5px var(--light_gray),
-                -.5px -.5px 5px var(--light_gray);
+    text-shadow: .25px .25px 3px var(--med_gray),
+                -.25px -.25px 3px var(--med_gray);
     color:  var(--dark_yellow);
-    border:  1px solid var(--dark_yellow);
+    border:  2.5px double var(--dark_yellow);
     padding:  3px 5px;
+}
+
+#message {
+    width:  60%;
+    height:  50px;
+    margin: 10px auto;
+    background-color: var(--med_gray);
+    padding:  3px 5px;
+    color:  var(--dark_yellow);
+    text-shadow: .25px .25px 3px black;
+    text-align: center;
 }
 
 #case_area {
@@ -25,7 +36,7 @@ header {
     display: grid;
     grid-template-columns: repeat(5, 40px);
     grid-template-rows: repeat(6, 25px);
-    grid-gap:  5px;
+    grid-gap:  15px;
     justify-content: center;
 }
 
@@ -34,4 +45,6 @@ header {
     border: 2px solid var(--light_gray);
     text-align: center;
     border-radius: 3px;
+    box-shadow: .5px .5px 3px black,
+                -.5px -.5px 3px black;
 }
