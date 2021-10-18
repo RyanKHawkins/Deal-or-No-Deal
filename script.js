@@ -19,6 +19,10 @@ briefcases.forEach((e) => {
         chooseBriefcase(e)
     })
 })
+
+//briefcases.forEach((e) => {
+//    e.addEventListener("click", chooseBriefcase(e))
+//})
 header.addEventListener("click", playGame)
 
 window.onload = () => {
@@ -40,6 +44,7 @@ function playGame() {
     briefcasesSelected = []
     console.log("Started game.")
     let offerAccepted = false;
+    message.innerText = ORIGINALMESSAGE
     instructions.innerText = ORIGINALINSTRUCTIONS
 
     
@@ -47,17 +52,36 @@ function playGame() {
 }
 
 function chooseBriefcase(briefcase, round = 1) {
-
     if (briefcasesSelected.length == 0) {
+        let casesToSelect = 6;
         firstCase = briefcase;
-        instructions.innerText = `You chose briefcase #${firstCase.id}.`
+        message.innerText = `You chose briefcase #${firstCase.id} to be your case.`
+        instructions.style.visibiliy = "none"
+        setTimeout(() => {
+            instructions.innerText = `Now choose ${casesToSelect} more cases for the first round.`
+        }, 500)
+        while (casesToSelect > 0) {
+            instructions.innerText = `Choose ${casesToSelect} more cases for round ${round}.`
+            casesToSelect--
+        }
+        
     }
     briefcase.style.display = "none";
     briefcasesSelected.push(briefcase.id);
     console.log(`Cases selected:  ${briefcasesSelected}`)
 }
 
+function getHighest$Remaining () {
+
+}
+
 function getBankOffer(round, highestCaseAmount) {
     let bankOffer = 0
+
+    // TODO:  Setup switch case to determine the bank offer.
+
+
+
+
     console.log(`The bank offered to buy your case for ${bankOffer}.`)
 }
