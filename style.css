@@ -1,14 +1,37 @@
 
 :root {
     --dark_yellow:  rgb(200, 200, 0);
-    --dark_bg:  rgb(75, 75, 75)
+    --dark_bg:  rgb(50, 50, 50);
+    --med_gray: rgb(150, 150, 150);
+    --light_gray:  rgb(175, 175, 175)
 }
 
 body {
     background-color: var(--dark_bg)
 }
 header {
+    width:  60%;
+    margin: 5px auto;
+    text-align: center;
+    text-shadow: .5px .5px 5px var(--light_gray),
+                -.5px -.5px 5px var(--light_gray);
     color:  var(--dark_yellow);
     border:  1px solid var(--dark_yellow);
-    padding:  2.5px 5px;
+    padding:  3px 5px;
+}
+
+#case_area {
+    margin: 25px;
+    display: grid;
+    grid-template-columns: repeat(5, 40px);
+    grid-template-rows: repeat(6, 25px);
+    grid-gap:  5px;
+    justify-content: center;
+}
+
+.cases {
+    background-color:  var(--med_gray);
+    border: 2px solid var(--light_gray);
+    text-align: center;
+    border-radius: 3px;
 }
