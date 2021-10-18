@@ -1,8 +1,10 @@
 
 :root {
-    --dark_yellow:  rgb(220, 220, 50);
+    --orange:  rgb(250, 150, 0);
+    --yellow:  rgb(250, 250, 50);
     --dark_bg:  rgb(40, 40, 40);
     --med_gray: rgb(150, 150, 150);
+    --dark_gray:  rgb(100, 100, 100);
     --light_gray:  rgb(175, 175, 175)
 }
 
@@ -11,39 +13,55 @@ body {
     user-select: none;
 }
 header {
-    width:  60%;
+    //width:  60%;
+    width:  300px;
     margin: 5px auto;
+    background: linear-gradient(var(--orange), var(--yellow));
     text-align: center;
     text-shadow: .25px .25px 3px var(--med_gray),
                 -.25px -.25px 3px var(--med_gray);
-    color:  var(--dark_yellow);
-    border:  2.5px double var(--dark_yellow);
+    color:  blac;
     padding:  3px 5px;
+}
+
+#message_area {
+    //width:  60%;
+    width:  300px;
+    //height:  50px;
+    margin: 15px auto;
+    //background-color: var(--med_gray);
+    padding:  .05px;
+    text-align:  center;
 }
 
 #message {
-    width:  60%;
-    height:  50px;
-    margin: 10px auto;
-    //background-color: var(--med_gray);
-    padding:  3px 5px;
-    color:  var(--dark_yellow);
-    text-shadow: .25px .25px 3px black;
-    text-align: center;
+    color:  var(--orange);
+    text-shadow: .25px .25px 1px var(--yellow)
+}
+
+#instructions {
+    color:   var(--yellow);
+    text-shadow: .25px .25px 25px var(--orange)
 }
 
 #briefcase_area {
-    margin: 25px;
+    margin: 25px auto;
+    width: 275px;
     display: grid;
     grid-template-columns: repeat(5, 40px);
     grid-template-rows: repeat(6, 25px);
     grid-gap:  15px;
     justify-content: center;
+    padding:  10px;
+    border-radius: 5px;
+    //box-shadow: .25px .25px 10px var(--yellow),
+                -.25px -.25px 10px var(--orange);
 }
 
 .briefcases {
-    background-color:  var(--med_gray);
-    border: 2px solid var(--light_gray);
+    //background-color:  var(--med_gray);
+    background:  linear-gradient(var(--med_gray), var(--light_gray), var(--med_gray));
+    border: 3px double var(--light_gray);
     text-align: center;
     border-radius: 5px;
     box-shadow: .5px .5px 3px black,
@@ -51,10 +69,9 @@ header {
 }
 
 .briefcases:hover {
-    border-color: var(--dark_yellow);
-    transform: scale(1.05);
-    box-shadow: .5px .5px 5px black,
-            -.5px -.5px 5px black;
-    //color:  var(--light_gray)
+    transform: scale(1.1);
+    border-color: var(--dark_gray);
+    box-shadow: .5px .5px 5px var(--light_gray),
+            -.5px -.5px 5px var(--light_gray);
 }
 
