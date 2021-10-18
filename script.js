@@ -8,12 +8,13 @@ const $ = (q) => document.querySelector(q)
 const $$ = (q) => [...document.querySelectorAll(q)]
 
 // Set variables.
-const cases = $$(".cases")
+const briefcases = $$(".briefcases")
 const message = $("#message")
+let briefcasesSelected = []
 
 // Set event listeners.
-cases.forEach((e) => {
-    e.addEventListener("click", () => console.log(`You chose case #${e.id}.`))
+briefcases.forEach((e) => {
+    e.addEventListener("click", () => console.log(`You chose briefcase #${e.id}.`))
 })
 
 window.onload = () => {
@@ -25,5 +26,14 @@ window.onload = () => {
 // Start the logic.
 
 function startGame() {
+    let round = 0
+
+}
+
+function chooseBriefcase(round, briefcase) {
+
+}
+
+function getBankOffer(round, highestCaseAmount) {
     
 }

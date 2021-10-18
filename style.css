@@ -31,7 +31,7 @@ header {
     text-align: center;
 }
 
-#case_area {
+#briefcase_area {
     margin: 25px;
     display: grid;
     grid-template-columns: repeat(5, 40px);
@@ -40,7 +40,7 @@ header {
     justify-content: center;
 }
 
-.cases {
+.briefcases {
     background-color:  var(--med_gray);
     border: 2px solid var(--light_gray);
     text-align: center;
