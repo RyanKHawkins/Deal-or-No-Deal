@@ -11,29 +11,36 @@ body {
     background-color: var(--dark_bg);
     user-select: none;
 }
+
 header {
     //width:  60%;
     width:  300px;
     margin: 5px auto;
     background: linear-gradient(var(--orange), var(--yellow));
     text-align: center;
-
+    letter-spacing: 2px;
     color:  black;
     padding:  3px 5px;
 }
 
 #header-1a {
+    font-weight: bold;
+    text-shadow: .25px .25px 2px var(--yellow),
+                -.25px -.25px 2px var(--yellow);
+    //position:  absolute;
 }
 
-#header-1a, #header-1c {
-    text-shadow: .25px .25px 2px var(--orange),
-                -.25px -.25px 2px var(--orange);
+#header-1b {
+    //position: relative;
 }
 
 #header-1c {
     padding: .5px 3px;
     color:  var(--yellow);
-    background-color:  black;
+    background-color:  var(--dark_bg);
+
+    text-shadow: .25px .25px 1px var(--orange),
+                -.25px -.25px 1px var(--orange);
 }
 
 #message_area {
@@ -86,4 +93,3 @@ header {
     box-shadow: .5px .5px 5px var(--light_gray),
             -.5px -.5px 5px var(--light_gray);
 }
-
