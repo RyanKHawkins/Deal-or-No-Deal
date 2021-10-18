@@ -32,7 +32,7 @@ window.onload = () => {
 // Start the logic.
 
 function playGame() {
-    briefcases.forEach((e) => e.style.visibility = "initial")
+    briefcases.forEach((e) => e.style.display = "initial")
     let round = 1
     let briefcasesSelected = []
     console.log("Started game.")
@@ -41,7 +41,7 @@ function playGame() {
 }
 
 function chooseBriefcase(briefcase, round = 1) {
-    briefcase.style.visibility = "hidden"
+    briefcase.style.display = "none"
 }
 
 function getBankOffer(round, highestCaseAmount) {
