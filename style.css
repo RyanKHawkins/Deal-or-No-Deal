@@ -17,10 +17,23 @@ header {
     margin: 5px auto;
     background: linear-gradient(var(--orange), var(--yellow));
     text-align: center;
-    text-shadow: .25px .25px 3px var(--med_gray),
-                -.25px -.25px 3px var(--med_gray);
-    color:  blac;
+
+    color:  black;
     padding:  3px 5px;
+}
+
+#header-1a {
+}
+
+#header-1a, #header-1c {
+    text-shadow: .25px .25px 2px var(--orange),
+                -.25px -.25px 2px var(--orange);
+}
+
+#header-1c {
+    padding: .5px 3px;
+    color:  var(--yellow);
+    background-color:  black;
 }
 
 #message_area {
@@ -35,12 +48,12 @@ header {
 
 #message {
     color:  var(--orange);
-    text-shadow: .25px .25px 1px var(--yellow)
+    //text-shadow: .25px .25px 1px var(--yellow)
 }
 
 #instructions {
     color:   var(--yellow);
-    text-shadow: .25px .25px 25px var(--orange)
+    //text-shadow: .25px .25px 25px var(--orange)
 }
 
 #briefcase_area {
