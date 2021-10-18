@@ -12,7 +12,6 @@ const header = $("header")
 const briefcases = $$(".briefcases")
 const instructions = $("#instructions")
 
-
 // Set event listeners.
 briefcases.forEach((e) => {
     e.addEventListener("click", () => {
