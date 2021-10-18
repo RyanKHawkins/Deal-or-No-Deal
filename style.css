@@ -1,7 +1,7 @@
 
 :root {
     --dark_yellow:  rgb(220, 220, 50);
-    --dark_bg:  rgb(50, 50, 50);
+    --dark_bg:  rgb(40, 40, 40);
     --med_gray: rgb(150, 150, 150);
     --light_gray:  rgb(175, 175, 175)
 }
@@ -24,7 +24,7 @@ header {
     width:  60%;
     height:  50px;
     margin: 10px auto;
-    background-color: var(--med_gray);
+    //background-color: var(--med_gray);
     padding:  3px 5px;
     color:  var(--dark_yellow);
     text-shadow: .25px .25px 3px black;
@@ -44,7 +44,16 @@ header {
     background-color:  var(--med_gray);
     border: 2px solid var(--light_gray);
     text-align: center;
-    border-radius: 3px;
+    border-radius: 5px;
     box-shadow: .5px .5px 3px black,
                 -.5px -.5px 3px black;
 }
+
+.briefcases:hover {
+    border-color: var(--dark_yellow);
+    transform: scale(1.05);
+    box-shadow: .5px .5px 5px black,
+            -.5px -.5px 5px black;
+    //color:  var(--light_gray)
+}
+
