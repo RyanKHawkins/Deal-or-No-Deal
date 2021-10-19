@@ -46,26 +46,31 @@ function playGame() {
     let offerAccepted = false;
     message.innerText = ORIGINALMESSAGE
     instructions.innerText = ORIGINALINSTRUCTIONS
-
-    
+    $("#chosen_area").innerHTML = ""
 
 }
 
 function chooseBriefcase(briefcase, round = 1) {
     if (briefcasesSelected.length == 0) {
+        
         let casesToSelect = 6;
         firstCase = briefcase;
+        console.log(`first case:  ${firstCase.id}`)
         message.innerText = `You chose briefcase #${firstCase.id} to be your case.`
-        instructions.style.visibiliy = "none"
-        setTimeout(() => {
-            instructions.innerText = `Now choose ${casesToSelect} more cases for the first round.`
-        }, 500)
-        while (casesToSelect > 0) {
-            instructions.innerText = `Choose ${casesToSelect} more cases for round ${round}.`
-            casesToSelect--
-        }
-        
+        instructions.style.visibility = "none"
+
+        // while (casesToSelect > 0) {
+        //     instructions.innerText = `Choose ${casesToSelect} more cases for round ${round}.`
+        //     casesToSelect--
+        // }
+        let caseEl = document.createElement("div")
+        //caseEl.classList.add("briefcases")
+        caseEl.id = "chosen_case"
+        caseEl.innerText = firstCase.id
+        $("#chosen_area").append(caseEl)
     }
+
+
     briefcase.style.display = "none";
     briefcasesSelected.push(briefcase.id);
     console.log(`Cases selected:  ${briefcasesSelected}`)
