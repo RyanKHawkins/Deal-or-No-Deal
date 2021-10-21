@@ -1,5 +1,5 @@
 :root {
-    --orange:  rgb(250, 125, 0);
+    --orange:  rgb(250, 200, 0);
     --yellow:  rgb(250, 250, 50);
     --dark_bg:  rgb(40, 40, 40);
     --med_gray: rgb(150, 150, 150);
@@ -31,8 +31,18 @@ header {
 }
 
 #header-1b {
-    //position: relative;
+    transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+    display:  inline-block;
+    font-size: 12px;
+    font-weight: 550;
+    letter-spacing: 0;
+    text-align: center;
+    justify-content: center;
+    //background-color:  green;
 }
+
+
 
 #header-1c {
     padding: .5px 3px;
