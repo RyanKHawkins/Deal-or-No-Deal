@@ -23,6 +23,12 @@ header {
     padding:  3px 5px;
 }
 
+header:hover {
+    background: linear-gradient(var(--yellow), var(--orange));
+}
+
+
+
 #header-1a {
     font-weight: bold;
     text-shadow: .25px .25px 2px var(--yellow),
@@ -51,6 +57,10 @@ header {
 
     text-shadow: .25px .25px 1px var(--orange),
                 -.25px -.25px 1px var(--orange);
+}
+
+#header-1c:hover {
+    color: var(--orange)
 }
 
 #message_area {
