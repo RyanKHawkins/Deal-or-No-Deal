@@ -32,7 +32,7 @@ window.onload = () => {
 
 let briefcasesSelected = []
 let firstCase = ""
-const ORIGINALMESSAGE = "Let's plays Deal or No Deal"
+const ORIGINALMESSAGE = "Let's play Deal or No Deal"
 const ORIGINALINSTRUCTIONS = "Choose a briefcase to start with."
 
 // Start the logic.
@@ -67,6 +67,12 @@ function chooseBriefcase(briefcase, round = 1) {
         //caseEl.classList.add("briefcases")
         caseEl.id = "chosen_case"
         caseEl.innerText = firstCase.id
+
+        let caseHandle = document.createElement("div")
+        caseHandle.classList.add("handles")
+        caseHandle.classList.add("golden")
+        caseEl.append(caseHandle)
+
         $("#chosen_area").append(caseEl)
     }
 
