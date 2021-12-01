@@ -51,6 +51,13 @@ function playGame() {
 }
 
 function chooseBriefcase(briefcase, round = 1) {
+
+    if(!firstCase) {
+        //TODO:  Move operations here that only need to be done if the case hadn't yet been selected.
+
+    }
+
+
     if (briefcasesSelected.length == 0) {
         
         let casesToSelect = 6;
