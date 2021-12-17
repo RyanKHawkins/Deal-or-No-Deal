@@ -24,7 +24,7 @@
 | 6 to 10 | 1 case |
 
 #### After opening the cases, there will be a bank offer at the end of each round. 
-#### The following is the cart used to decide on your offer, depending on the hightest amount left available:
+#### The following is the chart used to to figure out the offer, depending on the hightest amount left available:
 
 | Round | $1M | < $400,000 | < $75,000 | < $1,000 | < $100 |
 | ----- | ----- | ----- | ----- | ----- | ----- |
@@ -38,4 +38,4 @@
 | 8 | 600,000 | 200,000 | 40,000 | 1,900 | 30 |
 | 9 | 712,500 | 237,500 | 47,500 | 2,200 | 45 |
 
-#### The end goal of the game is to end with the highest amount possible, whether you keep your original case or you accept a bank offer.
+#### The end goal of the game is to end with the highest amount of money possible, whether you keep your original case or you accept a bank offer.
